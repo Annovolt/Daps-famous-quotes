@@ -454,13 +454,42 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   font-size: 0.88rem;
   color: var(--text-muted);
+}
+
+.results-meta-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .results-hint {
   color: var(--text-dim);
   font-size: 0.82rem;
+}
+
+.btn-export-csv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.btn-export-csv:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--accent);
+  color: var(--text-main);
 }
 
 /* Quotes Grid */
@@ -549,20 +578,30 @@ body {
 }
 
 .card-copy-btn {
-  background: transparent;
-  border: 1px solid transparent;
-  color: var(--text-dim);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
   font-size: 0.82rem;
-  padding: 0.25rem 0.5rem;
+  font-weight: 500;
+  padding: 0.3rem 0.65rem;
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: var(--transition);
 }
 
 .card-copy-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   color: var(--text-main);
-  border-color: var(--border-color);
+  border-color: var(--accent);
+}
+
+.card-copy-btn.copied {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border-color: #10b981;
 }
 
 /* Empty State */

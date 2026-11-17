@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const quotesGrid = document.getElementById('quotes-grid');
   const emptyState = document.getElementById('empty-state');
   const resultsCount = document.getElementById('results-count');
+  const btnExportCsv = document.getElementById('btn-export-csv');
   const toast = document.getElementById('toast');
 
   // Application State
@@ -246,8 +247,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <p class="card-quote-text">${escapeHtml(q.quote)}</p>
         <div class="card-footer">
           <span class="card-author">${escapeHtml(q.author)}</span>
-          <button type="button" class="card-copy-btn" title="Copy this quote" data-id="${q.id}">
-            📋 Copy
+          <button type="button" class="card-copy-btn" title="Copy quote to clipboard" aria-label="Copy quote to clipboard" data-id="${q.id}">
+            <span class="btn-copy-icon">📋</span> <span class="btn-copy-text">Copy</span>
           </button>
         </div>
       `;
@@ -271,11 +272,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      // Copy button inside card
+      // Copy button inside card with in-place visual feedback
       const copyBtn = card.querySelector('.card-copy-btn');
-      copyBtn.addEventListener('click', (e) => {
+      copyBtn.addEventListener('click', async (e) => {
         e.stopPropagation();
-        copyQuoteToClipboard(q);
+        await copyQuoteToClipboard(q);
+        const iconSpan = copyBtn.querySelector('.btn-copy-icon');
+        const textSpan = copyBtn.querySelector('.btn-copy-text');
+        copyBtn.classList.add('copied');
+        if (iconSpan) iconSpan.textContent = '✓';
+        if (textSpan) textSpan.textContent = 'Copied!';
+        setTimeout(() => {
+          copyBtn.classList.remove('copied');
+          if (iconSpan) iconSpan.textContent = '📋';
+          if (textSpan) textSpan.textContent = 'Copy';
+        }, 2000);
       });
 
       quotesGrid.appendChild(card);
@@ -419,6 +430,43 @@ document.addEventListener('DOMContentLoaded', () => {
   // Reset Buttons
   btnResetFilters.addEventListener('click', resetAllFilters);
   btnEmptyReset.addEventListener('click', resetAllFilters);
+
+  // Export to CSV
+  if (btnExportCsv) {
+    btnExportCsv.addEventListener('click', exportQuotesToCsv);
+  }
+
+  /**
+   * Export currently filtered quotes to a CSV file.
+   */
+  function exportQuotesToCsv() {
+    if (!state.quotes || state.quotes.length === 0) {
+      showToast('No quotes available to export.');
+      return;
+    }
+
+    const params = new URLSearchParams();
+    if (state.search.trim()) {
+      params.append('search', state.search.trim());
+    }
+    if (state.author) {
+      params.append('author', state.author);
+    }
+    if (state.category) {
+      params.append('category', state.category);
+    }
+
+    const url = `/api/quotes/export${params.toString() ? '?' + params.toString() : ''}`;
+
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', 'quotes.csv');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    showToast(`Exported ${state.quotes.length} quote${state.quotes.length === 1 ? '' : 's'} to CSV!`);
+  }
 
   /* ==========================================================================
      Initialization

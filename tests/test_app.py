@@ -160,3 +160,31 @@ class TestApiCategoriesAndAuthors:
 
         total_counted = sum(item["count"] for item in data["authors"])
         assert total_counted == 100
+
+
+class TestApiExportCsv:
+    """Validate /api/quotes/export CSV endpoint."""
+
+    def test_export_all_quotes_csv(self, client):
+        response = client.get("/api/quotes/export")
+        assert response.status_code == 200
+        assert "text/csv" in response.headers.get("Content-Type", "")
+        assert "attachment; filename=quotes.csv" in response.headers.get("Content-Disposition", "")
+
+        csv_text = response.get_data(as_text=True)
+        # Check UTF-8 BOM
+        assert csv_text.startswith("\ufeff")
+        lines = csv_text.strip().splitlines()
+        # 1 header line + 100 data rows
+        assert len(lines) == 101
+        assert "id,quote,author,category,year" in lines[0]
+
+    def test_export_filtered_quotes_csv(self, client):
+        response = client.get("/api/quotes/export?category=Science")
+        assert response.status_code == 200
+        csv_text = response.get_data(as_text=True)
+        lines = csv_text.strip().splitlines()
+        # Header + science quotes
+        assert len(lines) > 1
+        for row in lines[1:]:
+            assert "Science" in row

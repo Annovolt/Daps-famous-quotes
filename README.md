@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.0%2B-black.svg)](https://flask.palletsprojects.com/)
-[![Tests](https://img.shields.io/badge/Tests-16%20Passed-brightgreen.svg)]()
+[![Tests](https://img.shields.io/badge/Tests-18%20Passed-brightgreen.svg)]()
 [![Code Style](https://img.shields.io/badge/JavaScript-Vanilla%20ES6%2B-yellow.svg)]()
 [![Repository](https://img.shields.io/badge/GitHub-Daps--famous--quotes-blue?logo=github)](https://github.com/Annovolt/Daps-famous-quotes)
 
@@ -13,12 +13,14 @@ An interactive, responsive Single-Page Application (SPA) built with **Plain Vani
 ## 🌟 Key Features
 
 - **🎲 Spotlight Hero Quote**: Features a highlighted quote with smooth CSS fade transitions, one-click clipboard copying (with toast notifications), and instant Twitter/X sharing.
+- **📋 Copy to Clipboard on Every Quote**: Interactive copy button on each quote card with instant in-place visual confirmation (`✓ Copied!`) and toast feedback.
+- **📥 Export to CSV**: One-click export of matching/filtered quotes to an Excel-ready UTF-8 CSV file.
 - **🔍 Debounced Real-Time Search**: Instant full-text filtering across quotes, authors, and categories with a 300ms debounce to optimize performance.
 - **🏷️ Interactive Category Pills**: Visual filter tags displaying live quote counts for each category (*Philosophy, Science, Inspiration, Wisdom, Leadership, Life, Literature, Art, Humor*).
 - **✍️ Author Filter Dropdown**: Easily explore quotes by specific historical figures and philosophers.
 - **📱 Responsive & Modern UI**: Fluid CSS grid and flexbox layout with custom typography, dark-mode styling, and zero heavy frontend dependencies.
-- **⚡ RESTful JSON API**: Clean, documented endpoints for random quotes, filtering, and metadata aggregation.
-- **🧪 Comprehensive Test Suite**: 16 automated unit and integration tests covering the dataset, web routes, and API endpoints.
+- **⚡ RESTful JSON & CSV API**: Clean, documented endpoints for random quotes, filtering, CSV exports, and metadata aggregation.
+- **🧪 Comprehensive Test Suite**: 18 automated unit and integration tests covering the dataset, web routes, CSV exports, and API endpoints.
 
 ---
 
@@ -145,7 +147,17 @@ Returns an array of quotes matching the filter criteria.
 
 ---
 
-### 3. Get Categories
+### 3. Export Quotes to CSV
+`GET /api/quotes/export`
+
+Exports matching quotes as a downloadable CSV file formatted with UTF-8 BOM for Microsoft Excel / Google Sheets compatibility.
+
+- **Query Parameters**: Same optional filters as `/api/quotes` (`search`, `category`, `author`).
+- **Response Headers**: `Content-Type: text/csv; charset=utf-8`, `Content-Disposition: attachment; filename=quotes.csv`
+
+---
+
+### 4. Get Categories
 `GET /api/categories`
 
 Returns all unique categories sorted alphabetically with quote counts.
@@ -193,12 +205,13 @@ The project includes automated unit and integration tests using `pytest`.
 pytest -v
 ```
 
-### Test Coverage Summary:
+### Test Coverage Summary (18 Tests):
 - **`TestQuotesData`**: Validates `quotes.json` schema, non-empty fields, IDs, and 100 total quote count.
 - **`TestWebRoutes`**: Verifies `/` route returns HTML and HTTP 200.
 - **`TestApiRandomQuote`**: Tests random selection, category filtering, author filtering, and 404 behavior.
 - **`TestApiQuotesList`**: Tests list retrieval, keyword search, multi-filter combinations, and empty match handling.
 - **`TestApiCategoriesAndAuthors`**: Validates category and author aggregation and sorting.
+- **`TestApiExportCsv`**: Validates CSV exports for all quotes and filtered views, headers, UTF-8 BOM, and line counts.
 
 ---
 

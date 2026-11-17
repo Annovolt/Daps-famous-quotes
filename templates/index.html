@@ -104,8 +104,13 @@
 
         <!-- Results Header & Counter -->
         <div class="results-meta">
-          <span id="results-count">Showing 100 quotes</span>
-          <span class="results-hint">Click any quote card to spotlight it in the hero viewer</span>
+          <div class="results-meta-left">
+            <span id="results-count">Showing 100 quotes</span>
+            <span class="results-hint">Click any quote card to spotlight it in the hero viewer</span>
+          </div>
+          <button type="button" class="btn btn-secondary btn-export-csv" id="btn-export-csv" title="Export matching quotes to CSV">
+            <span class="btn-icon">📥</span> Export to CSV
+          </button>
         </div>
 
         <!-- Quotes Grid -->

@@ -1,7 +1,9 @@
+import csv
+import io
 import json
 import os
 import random
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, Response
 
 app = Flask(__name__)
 
@@ -102,6 +104,43 @@ def get_quotes():
         "count": len(matched),
         "total": len(QUOTES)
     })
+
+
+@app.route("/api/quotes/export", methods=["GET"])
+def export_quotes_csv():
+    """
+    Export quotes matching optional filters as a downloadable CSV file.
+    Query params:
+      - search / q: text query
+      - author: author name
+      - category: category name
+    """
+    category = request.args.get("category")
+    author = request.args.get("author")
+    search = request.args.get("search") or request.args.get("q")
+
+    matched = filter_quotes(QUOTES, query=search, author=author, category=category)
+
+    output = io.StringIO()
+    writer = csv.writer(output, quoting=csv.QUOTE_MINIMAL)
+    writer.writerow(["id", "quote", "author", "category", "year"])
+    for q in matched:
+        writer.writerow([
+            q.get("id", ""),
+            q.get("quote", ""),
+            q.get("author", ""),
+            q.get("category", ""),
+            q.get("year", "")
+        ])
+
+    csv_content = "\ufeff" + output.getvalue()
+    return Response(
+        csv_content,
+        mimetype="text/csv; charset=utf-8",
+        headers={
+            "Content-Disposition": "attachment; filename=quotes.csv"
+        }
+    )
 
 
 @app.route("/api/categories", methods=["GET"])
