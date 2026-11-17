@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotes100 — 100 Timeless Famous Quotes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <span class="brand-icon">❝</span>
+        <div>
+          <h1 class="brand-title">Quotes100</h1>
+          <p class="brand-subtitle">100 Celebrated Quotes Across History &amp; Thought</p>
+        </div>
+      </div>
+      <div class="header-badges">
+        <span class="badge badge-accent" id="total-quote-count">100 Quotes</span>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Hero Random Quote Spotlight -->
+      <section class="hero-section">
+        <div class="card hero-card" id="hero-card">
+          <div class="hero-card-header">
+            <span class="hero-tag" id="hero-category">Category</span>
+            <span class="hero-year" id="hero-year">Year</span>
+          </div>
+
+          <div class="hero-quote-body">
+            <span class="quote-mark open-quote">“</span>
+            <p class="hero-quote-text" id="hero-quote-text">Loading an inspiring quote...</p>
+            <span class="quote-mark close-quote">”</span>
+          </div>
+
+          <div class="hero-author-row">
+            <span class="author-dash">—</span>
+            <cite class="hero-author" id="hero-author">Author</cite>
+          </div>
+
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary" id="btn-new-quote" title="Fetch a new random quote">
+              <span class="btn-icon">🎲</span> New Random Quote
+            </button>
+            <button type="button" class="btn btn-secondary" id="btn-copy-hero" title="Copy quote to clipboard">
+              <span class="btn-icon">📋</span> Copy
+            </button>
+            <a href="#" class="btn btn-secondary" id="btn-tweet-hero" target="_blank" rel="noopener noreferrer" title="Share on Twitter / X">
+              <span class="btn-icon">𝕏</span> Share
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search & Browse Section -->
+      <section class="browse-section">
+        <div class="section-heading">
+          <h2>Search &amp; Filter Quotes</h2>
+          <p>Find quotes by keywords, specific thinkers, or categories</p>
+        </div>
+
+        <!-- Filter Controls Bar -->
+        <div class="filter-controls-card">
+          <div class="search-row">
+            <div class="search-input-wrapper">
+              <span class="search-icon">🔍</span>
+              <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Search quotes, authors, or categories..." 
+                autocomplete="off"
+              >
+              <button type="button" class="clear-search-btn" id="btn-clear-search" title="Clear search" style="display: none;">✕</button>
+            </div>
+
+            <div class="select-wrapper">
+              <label for="author-select" class="visually-hidden">Filter by Author</label>
+              <select id="author-select">
+                <option value="">All Authors (All)</option>
+              </select>
+            </div>
+
+            <button type="button" class="btn btn-secondary btn-reset" id="btn-reset-filters" title="Reset all filters">
+              Reset Filters
+            </button>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="category-pills-container">
+            <span class="category-pills-label">Categories:</span>
+            <div class="category-pills" id="category-pills">
+              <button type="button" class="pill active" data-category="">All</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results Header & Counter -->
+        <div class="results-meta">
+          <span id="results-count">Showing 100 quotes</span>
+          <span class="results-hint">Click any quote card to spotlight it in the hero viewer</span>
+        </div>
+
+        <!-- Quotes Grid -->
+        <div class="quotes-grid" id="quotes-grid">
+          <!-- Cards populated via Vanilla JS -->
+        </div>
+
+        <!-- No Results Fallback -->
+        <div class="empty-state" id="empty-state" style="display: none;">
+          <div class="empty-icon">🔎</div>
+          <h3>No quotes found</h3>
+          <p>We couldn't find any quotes matching your current search or filter combination.</p>
+          <button type="button" class="btn btn-primary" id="btn-empty-reset">Reset Search</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Built with Vanilla JavaScript, HTML5, CSS3, and Python Flask.</p>
+      <p class="footer-small">100 Timeless Quotes Collection • Curated for Inspiration &amp; Reflection</p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">Quote copied to clipboard!</div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

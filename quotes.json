@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "Inspiration",
+    "year": "2005"
+  },
+  {
+    "id": 2,
+    "quote": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "category": "Science",
+    "year": "1940"
+  },
+  {
+    "id": 3,
+    "quote": "An unexamined life is not worth living.",
+    "author": "Socrates",
+    "category": "Philosophy",
+    "year": "399 BC"
+  },
+  {
+    "id": 4,
+    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas Edison",
+    "category": "Science",
+    "year": "1910"
+  },
+  {
+    "id": 5,
+    "quote": "Be yourself; everyone else is already taken.",
+    "author": "Oscar Wilde",
+    "category": "Humor",
+    "year": "1882"
+  },
+  {
+    "id": 6,
+    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "author": "Nelson Mandela",
+    "category": "Leadership",
+    "year": "1994"
+  },
+  {
+    "id": 7,
+    "quote": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "category": "Life",
+    "year": "1980"
+  },
+  {
+    "id": 8,
+    "quote": "Happiness is not something ready-made. It comes from your own actions.",
+    "author": "Dalai Lama",
+    "category": "Wisdom",
+    "year": "1998"
+  },
+  {
+    "id": 9,
+    "quote": "It is during our darkest moments that we must focus to see the light.",
+    "author": "Aristotle",
+    "category": "Philosophy",
+    "year": "330 BC"
+  },
+  {
+    "id": 10,
+    "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Inspiration",
+    "year": "1841"
+  },
+  {
+    "id": 11,
+    "quote": "The journey of a thousand miles begins with one step.",
+    "author": "Lao Tzu",
+    "category": "Wisdom",
+    "year": "500 BC"
+  },
+  {
+    "id": 12,
+    "quote": "You must be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "category": "Leadership",
+    "year": "1913"
+  },
+  {
+    "id": 13,
+    "quote": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+    "author": "Albert Einstein",
+    "category": "Humor",
+    "year": "1945"
+  },
+  {
+    "id": 14,
+    "quote": "Simplicity is the ultimate sophistication.",
+    "author": "Leonardo da Vinci",
+    "category": "Art",
+    "year": "1500"
+  },
+  {
+    "id": 15,
+    "quote": "Science is organized knowledge. Wisdom is organized life.",
+    "author": "Immanuel Kant",
+    "category": "Science",
+    "year": "1781"
+  },
+  {
+    "id": 16,
+    "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Will Durant",
+    "category": "Wisdom",
+    "year": "1926"
+  },
+  {
+    "id": 17,
+    "quote": "Knowing yourself is the beginning of all wisdom.",
+    "author": "Aristotle",
+    "category": "Philosophy",
+    "year": "350 BC"
+  },
+  {
+    "id": 18,
+    "quote": "The only true wisdom is in knowing you know nothing.",
+    "author": "Socrates",
+    "category": "Wisdom",
+    "year": "400 BC"
+  },
+  {
+    "id": 19,
+    "quote": "Not all those who wander are lost.",
+    "author": "J.R.R. Tolkien",
+    "category": "Literature",
+    "year": "1954"
+  },
+  {
+    "id": 20,
+    "quote": "To be, or not to be, that is the question.",
+    "author": "William Shakespeare",
+    "category": "Literature",
+    "year": "1603"
+  },
+  {
+    "id": 21,
+    "quote": "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+    "author": "Marie Curie",
+    "category": "Science",
+    "year": "1920"
+  },
+  {
+    "id": 22,
+    "quote": "Whether you think you can or you think you can't, you're right.",
+    "author": "Henry Ford",
+    "category": "Inspiration",
+    "year": "1947"
+  },
+  {
+    "id": 23,
+    "quote": "Stay hungry, stay foolish.",
+    "author": "Steve Jobs",
+    "category": "Inspiration",
+    "year": "2005"
+  },
+  {
+    "id": 24,
+    "quote": "The mind is everything. What you think you become.",
+    "author": "Buddha",
+    "category": "Wisdom",
+    "year": "500 BC"
+  },
+  {
+    "id": 25,
+    "quote": "Courage is not the absence of fear, but rather the judgment that something else is more important than fear.",
+    "author": "Ambrose Redmoon",
+    "category": "Leadership",
+    "year": "1991"
+  },
+  {
+    "id": 26,
+    "quote": "There is nothing permanent except change.",
+    "author": "Heraclitus",
+    "category": "Philosophy",
+    "year": "500 BC"
+  },
+  {
+    "id": 27,
+    "quote": "Imagination is more important than knowledge.",
+    "author": "Albert Einstein",
+    "category": "Science",
+    "year": "1929"
+  },
+  {
+    "id": 28,
+    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "category": "Leadership",
+    "year": "1941"
+  },
+  {
+    "id": 29,
+    "quote": "A room without books is like a body without a soul.",
+    "author": "Cicero",
+    "category": "Literature",
+    "year": "43 BC"
+  },
+  {
+    "id": 30,
+    "quote": "Life is really simple, but we insist on making it complicated.",
+    "author": "Confucius",
+    "category": "Wisdom",
+    "year": "479 BC"
+  },
+  {
+    "id": 31,
+    "quote": "If you want to live a happy life, tie it to a goal, not to people or things.",
+    "author": "Albert Einstein",
+    "category": "Life",
+    "year": "1930"
+  },
+  {
+    "id": 32,
+    "quote": "Art is the lie that enables us to realize the truth.",
+    "author": "Pablo Picasso",
+    "category": "Art",
+    "year": "1923"
+  },
+  {
+    "id": 33,
+    "quote": "Everything you can imagine is real.",
+    "author": "Pablo Picasso",
+    "category": "Art",
+    "year": "1935"
+  },
+  {
+    "id": 34,
+    "quote": "Every artist was first an amateur.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Art",
+    "year": "1844"
+  },
+  {
+    "id": 35,
+    "quote": "The purpose of art is washing the dust of daily life off our souls.",
+    "author": "Pablo Picasso",
+    "category": "Art",
+    "year": "1964"
+  },
+  {
+    "id": 36,
+    "quote": "Creativity takes courage.",
+    "author": "Henri Matisse",
+    "category": "Art",
+    "year": "1947"
+  },
+  {
+    "id": 37,
+    "quote": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+    "author": "William Shakespeare",
+    "category": "Humor",
+    "year": "1600"
+  },
+  {
+    "id": 38,
+    "quote": "I can resist everything except temptation.",
+    "author": "Oscar Wilde",
+    "category": "Humor",
+    "year": "1892"
+  },
+  {
+    "id": 39,
+    "quote": "Better to remain silent and be thought a fool than to speak out and remove all doubt.",
+    "author": "Maurice Switzer",
+    "category": "Humor",
+    "year": "1907"
+  },
+  {
+    "id": 40,
+    "quote": "A day without laughter is a day wasted.",
+    "author": "Charlie Chaplin",
+    "category": "Humor",
+    "year": "1930"
+  },
+  {
+    "id": 41,
+    "quote": "Never put off till tomorrow what you can do day after tomorrow just as well.",
+    "author": "Mark Twain",
+    "category": "Humor",
+    "year": "1870"
+  },
+  {
+    "id": 42,
+    "quote": "If you tell the truth, you don't have to remember anything.",
+    "author": "Mark Twain",
+    "category": "Humor",
+    "year": "1894"
+  },
+  {
+    "id": 43,
+    "quote": "Get your facts first, then you can distort them as you please.",
+    "author": "Mark Twain",
+    "category": "Humor",
+    "year": "1899"
+  },
+  {
+    "id": 44,
+    "quote": "I have found that if you love life, life will love you back.",
+    "author": "Arthur Rubinstein",
+    "category": "Life",
+    "year": "1958"
+  },
+  {
+    "id": 45,
+    "quote": "The unexamined life is not worth living, but the unlived life is not worth examining.",
+    "author": "Anonymous",
+    "category": "Life",
+    "year": "1985"
+  },
+  {
+    "id": 46,
+    "quote": "In three words I can sum up everything I've learned about life: it goes on.",
+    "author": "Robert Frost",
+    "category": "Life",
+    "year": "1954"
+  },
+  {
+    "id": 47,
+    "quote": "Life isn't about finding yourself. Life is about creating yourself.",
+    "author": "George Bernard Shaw",
+    "category": "Life",
+    "year": "1910"
+  },
+  {
+    "id": 48,
+    "quote": "To live is the rarest thing in the world. Most people exist, that is all.",
+    "author": "Oscar Wilde",
+    "category": "Life",
+    "year": "1891"
+  },
+  {
+    "id": 49,
+    "quote": "Good judgment comes from experience, and a lot of that comes from bad judgment.",
+    "author": "Will Rogers",
+    "category": "Wisdom",
+    "year": "1928"
+  },
+  {
+    "id": 50,
+    "quote": "He who has a why to live can bear almost any how.",
+    "author": "Friedrich Nietzsche",
+    "category": "Philosophy",
+    "year": "1889"
+  },
+  {
+    "id": 51,
+    "quote": "That which does not kill us makes us stronger.",
+    "author": "Friedrich Nietzsche",
+    "category": "Philosophy",
+    "year": "1889"
+  },
+  {
+    "id": 52,
+    "quote": "Man is condemned to be free; because once thrown into the world, he is responsible for everything he does.",
+    "author": "Jean-Paul Sartre",
+    "category": "Philosophy",
+    "year": "1946"
+  },
+  {
+    "id": 53,
+    "quote": "I think, therefore I am.",
+    "author": "René Descartes",
+    "category": "Philosophy",
+    "year": "1637"
+  },
+  {
+    "id": 54,
+    "quote": "We do not see things as they are, we see them as we are.",
+    "author": "Anaïs Nin",
+    "category": "Philosophy",
+    "year": "1961"
+  },
+  {
+    "id": 55,
+    "quote": "Waste no more time arguing what a good man should be. Be one.",
+    "author": "Marcus Aurelius",
+    "category": "Philosophy",
+    "year": "180"
+  },
+  {
+    "id": 56,
+    "quote": "You have power over your mind - not outside events. Realize this, and you will find strength.",
+    "author": "Marcus Aurelius",
+    "category": "Philosophy",
+    "year": "180"
+  },
+  {
+    "id": 57,
+    "quote": "The best revenge is not to be like your enemy.",
+    "author": "Marcus Aurelius",
+    "category": "Philosophy",
+    "year": "180"
+  },
+  {
+    "id": 58,
+    "quote": "When you arise in the morning think of what a privilege it is to be alive, to think, to enjoy, to love.",
+    "author": "Marcus Aurelius",
+    "category": "Wisdom",
+    "year": "180"
+  },
+  {
+    "id": 59,
+    "quote": "We suffer more often in imagination than in reality.",
+    "author": "Seneca",
+    "category": "Philosophy",
+    "year": "65"
+  },
+  {
+    "id": 60,
+    "quote": "Luck is what happens when preparation meets opportunity.",
+    "author": "Seneca",
+    "category": "Wisdom",
+    "year": "65"
+  },
+  {
+    "id": 61,
+    "quote": "Difficulties strengthen the mind, as labor does the body.",
+    "author": "Seneca",
+    "category": "Wisdom",
+    "year": "65"
+  },
+  {
+    "id": 62,
+    "quote": "No man is free who is not master of himself.",
+    "author": "Epictetus",
+    "category": "Wisdom",
+    "year": "100"
+  },
+  {
+    "id": 63,
+    "quote": "First say to yourself what you would be; and then do what you have to do.",
+    "author": "Epictetus",
+    "category": "Wisdom",
+    "year": "108"
+  },
+  {
+    "id": 64,
+    "quote": "Leadership is not about titles, positions or flowcharts. It is about one life influencing another.",
+    "author": "John C. Maxwell",
+    "category": "Leadership",
+    "year": "1993"
+  },
+  {
+    "id": 65,
+    "quote": "A leader is one who knows the way, goes the way, and shows the way.",
+    "author": "John C. Maxwell",
+    "category": "Leadership",
+    "year": "1995"
+  },
+  {
+    "id": 66,
+    "quote": "If your actions inspire others to dream more, learn more, do more and become more, you are a leader.",
+    "author": "John Quincy Adams",
+    "category": "Leadership",
+    "year": "1835"
+  },
+  {
+    "id": 67,
+    "quote": "The function of leadership is to produce more leaders, not more followers.",
+    "author": "Ralph Nader",
+    "category": "Leadership",
+    "year": "1971"
+  },
+  {
+    "id": 68,
+    "quote": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "category": "Leadership",
+    "year": "1903"
+  },
+  {
+    "id": 69,
+    "quote": "It is not the critic who counts; not the man who points out how the strong man stumbles... The credit belongs to the man who is actually in the arena.",
+    "author": "Theodore Roosevelt",
+    "category": "Leadership",
+    "year": "1910"
+  },
+  {
+    "id": 70,
+    "quote": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+    "author": "Maya Angelou",
+    "category": "Wisdom",
+    "year": "1989"
+  },
+  {
+    "id": 71,
+    "quote": "There is no greater agony than bearing an untold story inside you.",
+    "author": "Maya Angelou",
+    "category": "Literature",
+    "year": "1969"
+  },
+  {
+    "id": 72,
+    "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
+    "author": "Maya Angelou",
+    "category": "Inspiration",
+    "year": "1993"
+  },
+  {
+    "id": 73,
+    "quote": "You can't use up creativity. The more you use, the more you have.",
+    "author": "Maya Angelou",
+    "category": "Art",
+    "year": "1982"
+  },
+  {
+    "id": 74,
+    "quote": "Somewhere, something incredible is waiting to be known.",
+    "author": "Carl Sagan",
+    "category": "Science",
+    "year": "1980"
+  },
+  {
+    "id": 75,
+    "quote": "We are a way for the cosmos to know itself.",
+    "author": "Carl Sagan",
+    "category": "Science",
+    "year": "1980"
+  },
+  {
+    "id": 76,
+    "quote": "Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious.",
+    "author": "Stephen Hawking",
+    "category": "Science",
+    "year": "2012"
+  },
+  {
+    "id": 77,
+    "quote": "Intelligence is the ability to adapt to change.",
+    "author": "Stephen Hawking",
+    "category": "Science",
+    "year": "2004"
+  },
+  {
+    "id": 78,
+    "quote": "Equipped with his five senses, man explores the universe around him and calls the adventure Science.",
+    "author": "Edwin Hubble",
+    "category": "Science",
+    "year": "1948"
+  },
+  {
+    "id": 79,
+    "quote": "If I have seen further it is by standing on the shoulders of Giants.",
+    "author": "Isaac Newton",
+    "category": "Science",
+    "year": "1675"
+  },
+  {
+    "id": 80,
+    "quote": "Nature does not hurry, yet everything is accomplished.",
+    "author": "Lao Tzu",
+    "category": "Wisdom",
+    "year": "500 BC"
+  },
+  {
+    "id": 81,
+    "quote": "He who knows, does not speak. He who speaks, does not know.",
+    "author": "Lao Tzu",
+    "category": "Philosophy",
+    "year": "500 BC"
+  },
+  {
+    "id": 82,
+    "quote": "When I let go of what I am, I become what I might be.",
+    "author": "Lao Tzu",
+    "category": "Inspiration",
+    "year": "500 BC"
+  },
+  {
+    "id": 83,
+    "quote": "Real knowledge is to know the extent of one's ignorance.",
+    "author": "Confucius",
+    "category": "Wisdom",
+    "year": "480 BC"
+  },
+  {
+    "id": 84,
+    "quote": "It does not matter how slowly you go as long as you do not stop.",
+    "author": "Confucius",
+    "category": "Inspiration",
+    "year": "490 BC"
+  },
+  {
+    "id": 85,
+    "quote": "The man who moves a mountain begins by carrying away small stones.",
+    "author": "Confucius",
+    "category": "Inspiration",
+    "year": "495 BC"
+  },
+  {
+    "id": 86,
+    "quote": "So many books, so little time.",
+    "author": "Frank Zappa",
+    "category": "Literature",
+    "year": "1978"
+  },
+  {
+    "id": 87,
+    "quote": "There is no friend as loyal as a book.",
+    "author": "Ernest Hemingway",
+    "category": "Literature",
+    "year": "1935"
+  },
+  {
+    "id": 88,
+    "quote": "Courage is grace under pressure.",
+    "author": "Ernest Hemingway",
+    "category": "Leadership",
+    "year": "1929"
+  },
+  {
+    "id": 89,
+    "quote": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "category": "Inspiration",
+    "year": "1885"
+  },
+  {
+    "id": 90,
+    "quote": "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do.",
+    "author": "H. Jackson Brown Jr.",
+    "category": "Inspiration",
+    "year": "1990"
+  },
+  {
+    "id": 91,
+    "quote": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "category": "Inspiration",
+    "year": "1905"
+  },
+  {
+    "id": 92,
+    "quote": "I cannot live without books.",
+    "author": "Thomas Jefferson",
+    "category": "Literature",
+    "year": "1815"
+  },
+  {
+    "id": 93,
+    "quote": "Words are, in my not-so-humble opinion, our most inexhaustible source of magic.",
+    "author": "J.K. Rowling",
+    "category": "Literature",
+    "year": "2007"
+  },
+  {
+    "id": 94,
+    "quote": "It is our choices that show what we truly are, far more than our abilities.",
+    "author": "J.K. Rowling",
+    "category": "Wisdom",
+    "year": "1998"
+  },
+  {
+    "id": 95,
+    "quote": "You cannot find peace by avoiding life.",
+    "author": "Virginia Woolf",
+    "category": "Literature",
+    "year": "1925"
+  },
+  {
+    "id": 96,
+    "quote": "Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.",
+    "author": "Virginia Woolf",
+    "category": "Literature",
+    "year": "1929"
+  },
+  {
+    "id": 97,
+    "quote": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "category": "Inspiration",
+    "year": "1945"
+  },
+  {
+    "id": 98,
+    "quote": "No one can make you feel inferior without your consent.",
+    "author": "Eleanor Roosevelt",
+    "category": "Wisdom",
+    "year": "1935"
+  },
+  {
+    "id": 99,
+    "quote": "Do one thing every day that scares you.",
+    "author": "Eleanor Roosevelt",
+    "category": "Inspiration",
+    "year": "1960"
+  },
+  {
+    "id": 100,
+    "quote": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "category": "Inspiration",
+    "year": "1897"
+  }
+]
